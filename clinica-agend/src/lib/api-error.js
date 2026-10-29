@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
 export function respondWithApiError(error) {
-  console.error('Erro na API:', error);
+  console.error('erro na API:', error);
 
   const isClientError = ['ValidationError', 'CastError'].includes(error?.name);
   const message = isClientError
