@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --moss: #394b3b;
+  --moss-dark: #29392d;
+  --moss-light: #e8eee6;
+  --cream: #f7f5ef;
+  --sand: #eee8da;
+  --gold: #b9985a;
+  --gold-light: #d7c18e;
+  --ink: #30392f;
+  --muted: #777d72;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+}
+
+.siteHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1rem max(1.5rem, calc((100% - 1120px) / 2));
+  background: var(--moss-dark);
+  color: #fbfaf6;
+  border-bottom: 3px solid var(--gold);
+  box-shadow: 0 8px 26px #27372918;
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  nav a {
+    padding: 0.65rem 0.9rem;
+    border-radius: 999px;
+    color: #e8e9df;
+    font-size: 0.92rem;
+    transition: background-color 160ms ease, color 160ms ease;
+
+    &:hover,
+    &:focus-visible {
+      background: #ffffff16;
+      color: #fff;
+    }
+  }
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  white-space: nowrap;
+
+  .brandMark {
+    display: grid;
+    width: 42px;
+    height: 42px;
+    place-items: center;
+    border: 1px solid #d7c18e80;
+    border-radius: 50%;
+    background: #f3eddf;
+
+    svg {
+      width: 25px;
+      height: 25px;
+      fill: none;
+      stroke: var(--moss);
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 1.8;
+    }
+  }
+
+  .brandName {
+    display: block;
+    color: #fff;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+  }
+
+  .brandCaption {
+    display: block;
+    margin-top: 0.15rem;
+    color: var(--gold-light);
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 560px) {
+  .siteHeader {
+    align-items: center;
+    flex-direction: column;
+    gap: 0.9rem;
+    padding: 1rem;
+
+    nav {
+      justify-content: center;
+      gap: 0.15rem;
+    }
+
+    nav a {
+      padding: 0.55rem 0.65rem;
+      font-size: 0.85rem;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "clinica-agend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "mongoose": "^8.19.1",
+    "next": "^16.4.3",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "sass": "^1.93.2"
+  }
+}

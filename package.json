@@ -1,0 +1,10 @@
+{
+  "name": "clinica-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix clinica-agend run dev",
+    "build": "npm --prefix clinica-agend run build",
+    "start": "npm --prefix clinica-agend start"
+  }
+}
